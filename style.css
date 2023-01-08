@@ -51,7 +51,7 @@ body {
 }
 
 .button-one {
-  filter: drop-shadow(0px 4px 4px rgba(249, 249, 249, 0.25));
+  filter: drop-shadow(0px 8px 4px rgba(255, 255, 255, 0.25));
   width: 193px;
   height: 58px;
   background: #4D96A9;
@@ -62,7 +62,13 @@ body {
   font-size: 16px;
   line-height: 26px;
   margin-right: 12px;
+  border: none;
+
 }
+
+
+
+
 
 
 .version {
@@ -73,8 +79,7 @@ body {
   width: 139px;
   height: 58px;
   background: #855FB1;
-
-
+  border: none;
   border-radius: 29px;
   color: white;
   font-style: normal;
@@ -201,7 +206,9 @@ Products Section
 
 }
 
-
+.icon-divider2 {
+  margin-bottom: -25px;
+}
 
 
 
@@ -256,6 +263,7 @@ Products Section
   font-size: 16px;
   font-weight: 900;
   margin: 20%;
+  border: none;
 }
 
 .footer-column2 {
@@ -277,11 +285,12 @@ Products Section
 
 
 @media (max-width: 768px) {
-  body{
+  body {
     display: inline-block;
   }
+
   .logo {
-  text-align: center;
+    text-align: center;
   }
 
   .hero-section {
@@ -293,7 +302,7 @@ Products Section
     display: inline;
     width: 820px;
     text-align: left;
-  
+
   }
 
   .heroImage-tablet {
@@ -350,5 +359,222 @@ Products Section
     text-align: center;
     width: 768px;
   }
+
+}
+
+
+@media (max-width: 600px) {
+
+
+
+  .logo {
+    margin-top: 80px;
+    margin-bottom: 62px;
+    text-align: center;
+
+  }
+
+
+
+  .column2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+
+  .icon-divider1 {
+    margin-top: 550px;
+    margin-bottom: 160px;
+  }
+
+
+  .headline-main {
+    width: 500px;
+    margin-top: 110px;
+  }
+
+  .main-paragraph {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 46px;
+  }
+
+
+  .button-one {
+    filter: drop-shadow(0px 8px 4px rgba(255, 255, 255, 0.25));
+    width: 320px;
+    height: 110px;
+    background: #4D96A9;
+    border-radius: 49px;
+    color: white;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 26px;
+    margin-right: 12px;
+    border: none;
+    margin-bottom: 20px;
+
+  }
+
+
+  .what-btn {
+    width: 239px;
+    height: 98px;
+    background: #855FB1;
+    border: none;
+    border-radius: 49px;
+    color: white;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 29px;
+    line-height: 26px;
+  }
+
+
+  .products-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 400px;
+  }
+
+
+  .first-product {
+    width: 48%;
+    height: 340px;
+  }
+
+
+  .second-product {
+    width: 48%;
+    height: 200px;
+
+  }
+
+  .third-product {
+    width: 48%;
+    height: 200px;
+  }
+
+  .fourth-product {
+    width: 48%;
+    height: 200px;
+  }
+
+  .products-section img {
+    width: 300px;
+    height: 300px;
+
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 15px;
+  }
+
+  .subheading {
+
+    Font-size: 32px;
+    Line-height: 26px;
+    Letter-spacing: 4px;
+    color: #4D96A9;
+  }
+
+  .headline {
+    Font-size: 52px;
+    Line-height: 54px;
+    text-align: center;
+    color: #28283D;
+    text-align: center;
+
+  }
+
+  .purpose-section p {
+    color: #87879D;
+    font-size: 35px;
+    line-height: 50px;
+    text-align: center;
+
+  }
+
+
+
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    /* or display: grid */
+    height: 308px;
+    background-image: url('assets/desktop/footer.jpg');
+    height: 850px;
+    align-items: center;
+  }
+
+ 
+
+  .footer-column1 {
+    
+    /* for 3 equal-width columns */
+   width: 100%;
+    text-align: center;
+  margin-bottom: -140px;
+  margin-top: -50px;
+
+
+  }
+
+
+  .footer-column2 {
+    width: 100%;
+    /* for 3 equal-width columns */
+   margin-top: -60px;
+  }
+  
+  
+  .footer-column3 {
+    width: 100%;
+    /* for 3 equal-width columns */
+    margin-top: -220px;
+  }
+  
+
+  .footer-column1 h2 {
+    Font-size: 55px;
+    Line-height: 60px;
+    color: #FAFAFA;
+    text-align: center;
+    font-weight: 900;
+   
+
+  }
+
+
+  .footer-column2 p {
+    Font-size: 40px;
+    color: #FAFAFA;
+    font-style: medium;
+    Line-height: 46px;
+  }
+
+  .icon-divider2 {
+    margin-top: 350px;
+  }
+
+  .footer-column3 button {
+    width: 293px;
+    height: 98px;
+    border-radius: 49px;
+    background-color: #855FB1;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-weight: 900;
+    margin: 20%;
+    border: none;
+  }
+  
 
 }
