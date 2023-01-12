@@ -1,12 +1,8 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Red Hat Display';
-
-
-
+  font-family: "Red Hat Display";
 }
-
 
 .logo {
   margin-top: 80px;
@@ -18,18 +14,14 @@ body {
   display: none;
 }
 
-
 .hero-section {
   display: flex;
-  /* or display: grid */
   height: 358px;
   margin-bottom: 110px;
 }
 
-
-
 .headline-main {
-  color: #28283D;
+  color: #28283d;
   font-style: normal;
   font-weight: 900;
   font-size: 64px;
@@ -37,24 +29,22 @@ body {
   text-align: center;
 }
 
-
 .main-paragraph {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 26px;
-  /* or 144% */
 
   text-align: center;
 
-  color: #87879D;
+  color: #87879d;
 }
 
 .button-one {
   filter: drop-shadow(0px 8px 4px rgba(255, 255, 255, 0.25));
   width: 193px;
   height: 58px;
-  background: #4D96A9;
+  background: #4d96a9;
   border-radius: 29px;
   color: white;
   font-style: normal;
@@ -63,22 +53,16 @@ body {
   line-height: 26px;
   margin-right: 12px;
   border: none;
-
 }
 
-
-
-
-
-
 .version {
-  color: #8FE3F9;
+  color: #8fe3f9;
 }
 
 .what-btn {
   width: 139px;
   height: 58px;
-  background: #855FB1;
+  background: #855fb1;
   border: none;
   border-radius: 29px;
   color: white;
@@ -90,10 +74,8 @@ body {
 
 .column1 {
   width: 33.33%;
-  /* for 3 equal-width columns */
   text-align: left;
 }
-
 
 .column2 {
   width: 33.33%;
@@ -101,21 +83,15 @@ body {
   text-align: center;
 }
 
-
 .column3 {
   margin-top: 3%;
   text-align: right;
   width: 33.33%;
 }
 
-
-
-
-
 .divider {
   text-align: center;
 }
-
 
 .purpose-section {
   width: 540px;
@@ -126,11 +102,9 @@ body {
   margin-top: -5%;
 }
 
-
 /*
 Products Section
 */
-
 
 .products-section img {
   width: 255px;
@@ -150,19 +124,15 @@ Products Section
   margin-left: 12%;
 }
 
-
-
 .first-product {
   width: 25%;
   border-radius: 10%;
 }
 
-
 .second-product {
   width: 25%;
   border-radius: 10%;
 }
-
 
 .third-product {
   width: 25%;
@@ -174,90 +144,75 @@ Products Section
   border-radius: 10%;
 }
 
-
-
 .purpose-section {
   width: 540px;
   height: 240px;
   text-align: center;
   margin-left: 450px;
   margin-top: 80px;
-
 }
 
 .purpose-section p {
-  color: #87879D;
+  color: #87879d;
 }
 
 .subheading {
-
-  Font-size: 16px;
-  Line-height: 26px;
-  Letter-spacing: 4px;
-  color: #4D96A9;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 4px;
+  color: #4d96a9;
 }
 
 .headline {
-  Font-size: 40px;
-  Line-height: 44px;
+  font-size: 40px;
+  line-height: 44px;
   text-align: center;
-  color: #28283D;
+  color: #28283d;
   text-align: center;
-
 }
 
 .icon-divider2 {
   margin-bottom: -25px;
 }
 
-
-
 .footer {
   display: flex;
   /* or display: grid */
   height: 308px;
-  background-image: url('assets/desktop/footer.jpg');
-
-
+  background-image: url("assets/desktop/footer.jpg");
 }
-
-
 
 .footer-column1 {
   width: 33.33%;
-  /* for 3 equal-width columns */
-  border-radius: 10%;
-  text-align: center;
+  
 
+  text-align: center;
 }
 
 .footer-column1 h2 {
-  Font-size: 32px;
-  Line-height: 44px;
-  color: #FAFAFA;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fafafa;
   text-align: center;
   font-weight: 900;
   margin: 20%;
-
 }
 
-
 .footer-column2 p {
-  Font-size: 18px;
-  color: #FAFAFA;
+  font-size: 18px;
+  color: #fafafa;
   text-align: center;
   font-weight: 500;
   margin: 20%;
   font-style: medium;
-  Line-height: 26px;
+  line-height: 26px;
 }
-
 
 .footer-column3 button {
   width: 193px;
   height: 58px;
   border-radius: 29px;
-  background-color: #855FB1;
+  background-color: #855fb1;
   text-align: center;
   color: white;
   font-size: 16px;
@@ -268,21 +223,13 @@ Products Section
 
 .footer-column2 {
   width: 33.33%;
-  /* for 3 equal-width columns */
-  border-radius: 10%;
+ 
 }
-
 
 .footer-column3 {
   width: 33.33%;
-  /* for 3 equal-width columns */
-  border-radius: 10%;
+
 }
-
-
-
-
-
 
 @media (max-width: 768px) {
   body {
@@ -297,18 +244,15 @@ Products Section
     display: inline-block;
   }
 
-
   .column1-tablet {
     display: inline;
     width: 820px;
     text-align: left;
-
   }
 
   .heroImage-tablet {
     max-width: 100%;
     max-height: 100%;
-
   }
 
   .column1 {
@@ -317,17 +261,13 @@ Products Section
 
   .column2 {
     width: 600px;
-    /* for 3 equal-width columns */
     text-align: center;
     margin-left: 10%;
   }
 
-
   .column3 {
     display: none;
   }
-
-
 
   .products-section {
     margin-top: 50px;
@@ -335,7 +275,6 @@ Products Section
     height: 156px;
     margin-bottom: 15%;
   }
-
 
   .products-section img {
     width: 164px;
@@ -345,236 +284,235 @@ Products Section
     border-radius: 15px;
   }
 
-
-
   .purpose-section {
     text-align: center;
     margin-top: 80px;
     margin: auto;
   }
 
-
   .footer {
-    background-image: url('assets/desktop/footer.jpg');
+    background-image: url("assets/desktop/footer.jpg");
     text-align: center;
     width: 768px;
   }
-
 }
 
 
-@media (max-width: 600px) {
 
 
 
-  .logo {
-    margin-top: 80px;
-    margin-bottom: 62px;
-    text-align: center;
-
+@media (max-width: 567px) {
+  .main {
+    margin: 0;
+    padding: 0;
+    border: 0;
   }
 
+  .heroImage-tablet {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    border: none;
+  }
 
+  .logo {
+    margin-top: 50px;
+    margin-bottom: 62px;
+    text-align: center;
+  }
 
   .column2 {
+    width: 100%;
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-
   }
-
 
   .icon-divider1 {
-    margin-top: 550px;
-    margin-bottom: 160px;
+    margin-top: 200px;
+    margin-bottom: 200px;
   }
 
-
   .headline-main {
-    width: 500px;
-    margin-top: 110px;
+    color: #28283d;
+    /* font-style: normal; */
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
   }
 
   .main-paragraph {
-    font-size: 35px;
+    font-size: 20px;
     font-weight: 500;
-    line-height: 46px;
+    line-height: 36px;
+    width: 100%;
+    height: auto;
   }
 
 
-  .button-one {
-    filter: drop-shadow(0px 8px 4px rgba(255, 255, 255, 0.25));
-    width: 320px;
-    height: 110px;
-    background: #4D96A9;
+  .button-one{
+    width: 210px;
+    height: 75px;
+    font-size: 20px;
     border-radius: 49px;
-    color: white;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 30px;
-    line-height: 26px;
-    margin-right: 12px;
-    border: none;
-    margin-bottom: 20px;
-
   }
 
-
-  .what-btn {
-    width: 239px;
-    height: 98px;
-    background: #855FB1;
-    border: none;
+  .what-btn{
+    width: 170px;
+    height: 65px;
+    font-size: 20px;
     border-radius: 49px;
-    color: white;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 29px;
-    line-height: 26px;
   }
 
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    align-items: center;
+  }
 
   .products-section {
+    width: 100%;
+    margin: 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 400px;
+    margin-bottom: 160px;
+ 
   }
-
 
   .first-product {
-    width: 48%;
-    height: 340px;
+    width: 45%;
+    height: 200px;
+   
   }
 
-
   .second-product {
-    width: 48%;
+    width: 45%;
     height: 200px;
-
   }
 
   .third-product {
-    width: 48%;
+    width: 45%;
     height: 200px;
   }
 
   .fourth-product {
-    width: 48%;
+    width: 45%;
     height: 200px;
   }
 
   .products-section img {
-    width: 300px;
-    height: 300px;
-
+    
+    width: 160px;
+    height: 170px;
 
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 15px;
   }
 
   .subheading {
-
-    Font-size: 32px;
-    Line-height: 26px;
-    Letter-spacing: 4px;
-    color: #4D96A9;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 4px;
+    color: #4d96a9;
   }
 
   .headline {
-    Font-size: 52px;
-    Line-height: 54px;
+    font-size: 35px;
+    line-height: 35px;
     text-align: center;
-    color: #28283D;
+    color: #28283d;
     text-align: center;
-
   }
 
   .purpose-section p {
-    color: #87879D;
-    font-size: 35px;
-    line-height: 50px;
+    margin: 0;
+    color: #87879d;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 36px;
     text-align: center;
+  }
 
+  .purpose-section {
+    width: 100%;
+    margin: 0;
   }
 
 
-
+  .icon-divider2 {
+    margin-top: 150px;
+  }
+  /* FOOTER SECTION */
 
   .footer {
     display: flex;
     flex-direction: column;
     /* or display: grid */
-    height: 308px;
-    background-image: url('assets/desktop/footer.jpg');
-    height: 850px;
+    width: 100%;
+    margin: 0;
+    height: auto;
+    background-image: url("assets/desktop/footer.jpg");
+    background-size: cover;
+    background-position: center;
+
     align-items: center;
   }
 
- 
-
   .footer-column1 {
-    
     /* for 3 equal-width columns */
-   width: 100%;
+    width: 100%;
+    height: auto;
     text-align: center;
-  margin-bottom: -140px;
-  margin-top: -50px;
-
-
+    border: none;
+    margin-bottom: -80px;
   }
-
 
   .footer-column2 {
     width: 100%;
     /* for 3 equal-width columns */
-   margin-top: -60px;
+    margin-bottom: -80px;
   }
-  
-  
+
   .footer-column3 {
     width: 100%;
+    border: none;
     /* for 3 equal-width columns */
-    margin-top: -220px;
   }
-  
 
   .footer-column1 h2 {
-    Font-size: 55px;
-    Line-height: 60px;
-    color: #FAFAFA;
+    font-size: 35px;
+    line-height: 30px;
+    color: #fafafa;
     text-align: center;
     font-weight: 900;
-   
-
+    
   }
-
 
   .footer-column2 p {
-    Font-size: 40px;
-    color: #FAFAFA;
+    font-size: 20px;
+    color: #fafafa;
     font-style: medium;
-    Line-height: 46px;
+    line-height: 36px;
   }
 
-  .icon-divider2 {
-    margin-top: 350px;
-  }
-
-  .footer-column3 button {
-    width: 293px;
-    height: 98px;
-    border-radius: 49px;
-    background-color: #855FB1;
-    text-align: center;
-    color: white;
-    font-size: 25px;
-    font-weight: 900;
-    margin: 20%;
-    border: none;
-  }
   
 
+  .footer-column3 button {
+    width: 210px;
+    height: 68px;
+    border-radius: 49px;
+    background-color: #855fb1;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+
+    border: none;
+  }
 }
