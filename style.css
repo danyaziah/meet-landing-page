@@ -347,8 +347,11 @@ Products Section
     font-size: 20px;
     font-weight: 500;
     line-height: 36px;
-    width: 100%;
+    width: 350px;
     height: auto;
+
+      
+    
   }
 
 
@@ -430,6 +433,13 @@ Products Section
     text-align: center;
   }
 
+.purpose-content{
+  width: 330px;
+margin-left: 40px; 
+ height: auto;
+ text-align: center;
+}
+
   .purpose-section p {
     margin: 0;
     color: #87879d;
@@ -466,12 +476,14 @@ Products Section
 
   .footer-column1 {
     /* for 3 equal-width columns */
-    width: 100%;
+  
     height: auto;
     text-align: center;
     border: none;
     margin-bottom: -80px;
+    width: 100%;
   }
+
 
   .footer-column2 {
     width: 100%;
@@ -487,18 +499,23 @@ Products Section
 
   .footer-column1 h2 {
     font-size: 35px;
-    line-height: 30px;
+    line-height: 38px;
     color: #fafafa;
     text-align: center;
     font-weight: 900;
+    width: 330px;
+   margin-left: 10%;
+    
     
   }
 
   .footer-column2 p {
-    font-size: 20px;
+    font-size: 23px;
     color: #fafafa;
     font-style: medium;
-    line-height: 36px;
+    line-height: 32px;
+    width: 330px;
+   margin-left: 10%;
   }
 
   
