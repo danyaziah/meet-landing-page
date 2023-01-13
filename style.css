@@ -15,28 +15,35 @@ body {
 }
 
 .hero-section {
+  margin: auto;
   display: flex;
   height: 358px;
   margin-bottom: 110px;
 }
 
 .headline-main {
+  display: flex;
+  justify-content: center;
   color: #28283d;
   font-style: normal;
   font-weight: 900;
   font-size: 64px;
   line-height: 64px;
-  text-align: center;
+  width: 445px;
+  height: 128px;
+  margin: auto;
+  margin-bottom: 34px;
 }
 
 .main-paragraph {
+  width: 540px;
+  height: 52px;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 26px;
-
   text-align: center;
-
+  margin-bottom: 32px;
   color: #87879d;
 }
 
@@ -55,8 +62,38 @@ body {
   border: none;
 }
 
+/* Button Hover Properties Starts Here */
+
+.button-one:hover {
+  background: #71c0d4;
+  cursor: pointer;
+}
+
+.version:hover {
+  color: #8fe3f9;
+}
+
+.what-btn:hover {
+  background: #b18bdd;
+  cursor: pointer;
+}
+
+.footer-button:hover {
+  background: #b18bdd;
+  cursor: pointer;
+}
+
+.footer-version:hover {
+  color: #d9b8ff;
+}
+
+/* Button Hover Properties Ends Here */
+
 .version {
   color: #8fe3f9;
+}
+.footer-version {
+  color: #d9b8ff;
 }
 
 .what-btn {
@@ -73,87 +110,65 @@ body {
 }
 
 .column1 {
-  width: 33.33%;
+  width: 450px;
   text-align: left;
+  margin-left: -32px;
 }
 
 .column2 {
-  width: 33.33%;
-  /* for 3 equal-width columns */
+  width: 540px;
+  height: 304px;
   text-align: center;
+  margin: auto;
 }
 
 .column3 {
+  margin: auto;
+  width: 450px;
   margin-top: 3%;
   text-align: right;
-  width: 33.33%;
 }
 
 .divider {
   text-align: center;
 }
 
-.purpose-section {
-  width: 540px;
-  height: 240px;
-  text-align: center;
-  margin: auto;
-  margin-bottom: 72px;
-  margin-top: -5%;
-}
-
-/*
-Products Section
-*/
-
 .products-section img {
   width: 255px;
   height: 242px;
-
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .products-section {
   display: flex;
-  /* or display: grid */
+  justify-content: center;
+  align-items: center;
+  margin: auto;
   height: 242px;
   text-align: center;
   margin-top: 3%;
   width: 1110px;
-  margin-left: 12%;
-}
-
-.first-product {
-  width: 25%;
-  border-radius: 10%;
-}
-
-.second-product {
-  width: 25%;
-  border-radius: 10%;
-}
-
-.third-product {
-  width: 25%;
-  border-radius: 10%;
-}
-
-.fourth-product {
-  width: 25%;
-  border-radius: 10%;
+  gap: 30px;
 }
 
 .purpose-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 540px;
   height: 240px;
   text-align: center;
-  margin-left: 450px;
+  margin: auto;
   margin-top: 80px;
 }
 
 .purpose-section p {
   color: #87879d;
+  width: 540px;
+  height: 78px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 32px;
 }
 
 .subheading {
@@ -161,6 +176,9 @@ Products Section
   line-height: 26px;
   letter-spacing: 4px;
   color: #4d96a9;
+  width: 295px;
+  height: 26px;
+  margin-bottom: 16px;
 }
 
 .headline {
@@ -169,43 +187,49 @@ Products Section
   text-align: center;
   color: #28283d;
   text-align: center;
+  margin-top: 16px;
+  margin: auto;
 }
 
 .icon-divider2 {
+  margin-top: 75px;
   margin-bottom: -25px;
 }
 
 .footer {
   display: flex;
-  /* or display: grid */
   height: 308px;
   background-image: url("assets/desktop/footer.jpg");
 }
 
 .footer-column1 {
   width: 33.33%;
-  
 
   text-align: center;
 }
 
 .footer-column1 h2 {
-  font-size: 32px;
+  width: 350px;
+  height: 88px;
+  font-size: 40px;
   line-height: 44px;
   color: #fafafa;
-  text-align: center;
+  text-align: left;
   font-weight: 900;
   margin: 20%;
 }
 
 .footer-column2 p {
   font-size: 18px;
+  text-align: left;
   color: #fafafa;
   text-align: center;
   font-weight: 500;
   margin: 20%;
   font-style: medium;
   line-height: 26px;
+  width: 350px;
+  height: 73px;
 }
 
 .footer-column3 button {
@@ -223,17 +247,18 @@ Products Section
 
 .footer-column2 {
   width: 33.33%;
- 
 }
 
 .footer-column3 {
   width: 33.33%;
-
 }
+
+/* TABLET VERSION STYLE STARTS HERE */
 
 @media (max-width: 768px) {
   body {
-    display: inline-block;
+    display: flex;
+    margin: 0;
   }
 
   .logo {
@@ -246,13 +271,16 @@ Products Section
 
   .column1-tablet {
     display: inline;
-    width: 820px;
-    text-align: left;
+    width: 830px;
   }
 
   .heroImage-tablet {
-    max-width: 100%;
-    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 830px;
+    height: 303px;
+    margin: auto;
   }
 
   .column1 {
@@ -260,20 +288,73 @@ Products Section
   }
 
   .column2 {
-    width: 600px;
+    width: 457px;
+    height: 262px;
     text-align: center;
-    margin-left: 10%;
+    margin: auto;
+    margin-top: 72px;
+    margin-bottom: 80px;
+  }
+
+  .headline-main {
+    color: #28283d;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  .main-paragraph {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #87879d;
+    width: 457px;
+    height: 52px;
+    margin-bottom: 32px;
   }
 
   .column3 {
     display: none;
   }
 
+  /* HERO BUTTON STYLE STARTS HERE */
+
+  .button-one {
+    width: 193px;
+    height: 58px;
+    font-size: 16px;
+    line-height: 26px;
+    border-radius: 29px;
+  }
+
+  .what-btn {
+    width: 139px;
+    height: 58px;
+    font-size: 16px;
+    border-radius: 29px;
+  }
+
+  /* HERO BUTTON STYLE ENDS HERE */
+
+  .icon-divider1 {
+    margin-top: 104px;
+    margin-bottom: 64px;
+  }
+
+  /* PRODUCTS  STYLE FOR TABLET STARTS HERE */
+
   .products-section {
-    margin-top: 50px;
+    display: flex;
+    gap: 11px;
+    margin: auto;
     width: 689px;
     height: 156px;
-    margin-bottom: 15%;
+    margin-bottom: 48px;
   }
 
   .products-section img {
@@ -281,25 +362,135 @@ Products Section
     height: 156px;
     margin: auto;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 15px;
+    border-radius: 10px;
   }
+
+  /* PRODUCTS  STYLE FOR TABLET ENDS HERE */
+
+  /* PURPOSE  STYLE FOR TABLET STARTS HERE */
 
   .purpose-section {
     text-align: center;
     margin-top: 80px;
     margin: auto;
+    width: 573px;
+    height: 240px;
   }
+
+  .subheading {
+    margin: auto;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    color: #4d96a9;
+    width: 296px;
+    height: 26px;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .headline {
+    margin: auto;
+    font-size: 40px;
+    line-height: 44px;
+    text-align: center;
+    color: #28283d;
+    text-align: center;
+    width: 445px;
+    height: 88px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+  }
+
+  .purpose-section p {
+    margin: 0;
+    color: #87879d;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+    width: 573px;
+    height: 78px;
+    margin-bottom: 80px;
+  }
+
+  /* PURPOSE  STYLE FOR TABLET ENDS HERE */
+
+  /* FOOTER  STYLE FOR TABLET STARTS HERE */
 
   .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-image: url("assets/desktop/footer.jpg");
     text-align: center;
-    width: 768px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+
+    align-items: center;
   }
+
+  .footer-column1 {
+    width: 100%;
+  }
+
+  .footer-column2 {
+    width: 100%;
+  }
+
+  .footer-column3 {
+    width: 100%;
+  }
+
+  .footer-column1 h2 {
+    margin: auto;
+    font-size: 40px;
+    line-height: 44px;
+    color: #fafafa;
+    font-weight: 900;
+    width: 457px;
+    text-align: center;
+    margin-bottom: 32px;
+    margin-top: 92px;
+  }
+
+  .footer-column2 p {
+    font-size: 18px;
+    color: #fafafa;
+    margin: auto;
+    font-style: medium;
+    line-height: 26px;
+    width: 573px;
+    height: 52px;
+    font-weight: 500;
+  }
+
+  .footer-column3 button {
+    font-size: 16px;
+    width: 193px;
+    height: 58px;
+    border-radius: 49px;
+    background-color: #855fb1;
+    text-align: center;
+    color: white;
+    margin: auto;
+    font-weight: 900;
+    margin-top: 40px;
+    margin-bottom: 66px;
+  }
+
+  .footer-version {
+    color: #d9b8ff;
+  }
+  /* FOOTER  STYLE FOR TABLET ENDS HERE */
 }
 
-
-
-
+/* TABLET VERSION STYLE STARTS ENDS */
 
 @media (max-width: 567px) {
   .main {
@@ -330,43 +521,43 @@ Products Section
   }
 
   .icon-divider1 {
-    margin-top: 200px;
-    margin-bottom: 200px;
+    margin-top: 120px;
+    margin-bottom: 64px;
   }
 
   .headline-main {
     color: #28283d;
     /* font-style: normal; */
     font-weight: 900;
-    font-size: 48px;
-    line-height: 64px;
+    font-size: 40px;
+    line-height: 44px;
     text-align: center;
+    width: 327px;
+    height: 88px;
+    margin-top: 48px;
   }
 
   .main-paragraph {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
-    line-height: 36px;
-    width: 350px;
-    height: auto;
-
-      
-    
+    line-height: 26px;
+    width: 327px;
+    height: 78px;
   }
 
-
-  .button-one{
-    width: 210px;
-    height: 75px;
-    font-size: 20px;
-    border-radius: 49px;
+  .button-one {
+    width: 193px;
+    height: 58px;
+    font-size: 16px;
+    line-height: 26px;
+    border-radius: 29px;
   }
 
-  .what-btn{
-    width: 170px;
-    height: 65px;
-    font-size: 20px;
-    border-radius: 49px;
+  .what-btn {
+    width: 139px;
+    height: 58px;
+    font-size: 16px;
+    border-radius: 29px;
   }
 
   .buttons {
@@ -377,86 +568,96 @@ Products Section
   }
 
   .products-section {
-    width: 100%;
-    margin: 0;
+    width: 327px;
+    height: 310px;
+
     display: flex;
-    justify-content: center;
-    align-content: center;
+    justify-content: space-between;
+    align-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 160px;
- 
+    /* margin-bottom: 100px; */
+    margin: auto;
   }
 
   .first-product {
-    width: 45%;
-    height: 200px;
-   
+    width: 151px;
+    height: 143px;
   }
 
   .second-product {
-    width: 45%;
-    height: 200px;
+    width: 151px;
+    height: 143px;
   }
 
   .third-product {
-    width: 45%;
-    height: 200px;
+    width: 151px;
+    height: 143px;
   }
 
   .fourth-product {
-    width: 45%;
-    height: 200px;
+    width: 151px;
+    height: 143px;
   }
 
   .products-section img {
-    
-    width: 160px;
-    height: 170px;
+    width: 151px;
+    height: 143px;
 
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 15px;
+    border-radius: 10px;
   }
 
   .subheading {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 26px;
+    font-weight: 900;
     letter-spacing: 4px;
     color: #4d96a9;
+    width: 327px;
+    height: 26px;
+    text-align: center;
   }
 
   .headline {
-    font-size: 35px;
-    line-height: 35px;
+    font-size: 32px;
+    line-height: 36px;
     text-align: center;
     color: #28283d;
     text-align: center;
+    width: 327px;
+    height: 72px;
+    margin-top: 24px;
   }
 
-.purpose-content{
+  /* .purpose-content{
   width: 330px;
 margin-left: 40px; 
  height: auto;
  text-align: center;
-}
+} */
 
   .purpose-section p {
     margin: 0;
     color: #87879d;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
-    line-height: 36px;
+    line-height: 26px;
     text-align: center;
+    width: 327px;
+    height: 130px;
   }
 
   .purpose-section {
-    width: 100%;
-    margin: 0;
+    width: 327px;
+    height: 284px;
+    margin: auto;
+    margin-top: 64px;
   }
 
-
   .icon-divider2 {
-    margin-top: 150px;
+    margin-top: 64px;
+    border-color: none;
   }
   /* FOOTER SECTION */
 
@@ -464,9 +665,9 @@ margin-left: 40px;
     display: flex;
     flex-direction: column;
     /* or display: grid */
-    width: 100%;
-    margin: 0;
-    height: auto;
+    width: auto;
+    height: 428px;
+    margin: auto;
     background-image: url("assets/desktop/footer.jpg");
     background-size: cover;
     background-position: center;
@@ -476,19 +677,15 @@ margin-left: 40px;
 
   .footer-column1 {
     /* for 3 equal-width columns */
-  
-    height: auto;
+    width: 327px;
+    height: 72px;
     text-align: center;
-    border: none;
-    margin-bottom: -80px;
-    width: 100%;
+    margin-top: 64px;
   }
-
 
   .footer-column2 {
     width: 100%;
     /* for 3 equal-width columns */
-    margin-bottom: -80px;
   }
 
   .footer-column3 {
@@ -498,38 +695,41 @@ margin-left: 40px;
   }
 
   .footer-column1 h2 {
-    font-size: 35px;
-    line-height: 38px;
+    font-size: 32px;
+    line-height: 36px;
     color: #fafafa;
     text-align: center;
     font-weight: 900;
     width: 330px;
-   margin-left: 10%;
-    
-    
+    margin: auto;
   }
 
   .footer-column2 p {
-    font-size: 23px;
+    font-size: 18px;
     color: #fafafa;
     font-style: medium;
-    line-height: 32px;
+    line-height: 26px;
     width: 330px;
-   margin-left: 10%;
+    margin: auto;
+    font-weight: 500;
+    margin-top: 24px;
+    margin-bottom: 32px;
   }
 
-  
-
   .footer-column3 button {
-    width: 210px;
-    height: 68px;
+    width: 193px;
+    height: 58px;
     border-radius: 49px;
     background-color: #855fb1;
     text-align: center;
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 900;
-
+    margin-top: 32px;
     border: none;
+  }
+
+  .footer-version {
+    color: #d9b8ff;
   }
 }
