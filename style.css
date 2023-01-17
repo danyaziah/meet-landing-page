@@ -4,6 +4,8 @@ body {
   font-family: "Red Hat Display";
 }
 
+
+
 .logo {
   margin-top: 80px;
   margin-bottom: 62px;
@@ -89,6 +91,58 @@ body {
 
 /* Button Hover Properties Ends Here */
 
+
+/* Numbers section starts Here */
+
+.section__line {
+  width: 56px;
+  height: 84px;
+  border-left: 1px solid rgb(216, 216, 216);
+  transform: translateX(50%);
+}
+.section__badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid #d8d8d8;
+}
+
+
+.section__number-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  z-index: 5;
+margin-top: 110px;
+margin-bottom: 64px;
+  align-items: center;
+}
+
+
+.section__number-footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  z-index: 5;
+  margin-bottom: -28px;
+  margin-top: 72px;
+  align-items: center;
+}
+.section__number {
+  line-height: 26px;
+  font-size: 16px;
+  font-weight: 900;
+  color: #87879D;
+}
+
+/* Numbers section Ends Here */
+
 .version {
   color: #8fe3f9;
 }
@@ -123,15 +177,15 @@ body {
 }
 
 .column3 {
-  margin: auto;
+  /* margin: auto; */
   width: 450px;
   margin-top: 3%;
   text-align: right;
 }
 
-.divider {
+/* .divider {
   text-align: center;
-}
+} */
 
 .products-section img {
   width: 255px;
@@ -191,9 +245,12 @@ body {
   margin: auto;
 }
 
-.icon-divider2 {
+/* .icon-divider2 {
   margin-top: 75px;
   margin-bottom: -25px;
+} */
+.footer-number{
+  margin-top: 72px;
 }
 
 .footer {
@@ -252,6 +309,13 @@ body {
 .footer-column3 {
   width: 33.33%;
 }
+
+
+
+
+
+
+
 
 /* TABLET VERSION STYLE STARTS HERE */
 
@@ -322,6 +386,32 @@ body {
     display: none;
   }
 
+
+  .section__number-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 5;
+  margin-top: 80px;
+  margin-bottom: 67px;
+    align-items: center;
+  }
+  
+
+  /* SECTION-NUMBERS */
+  
+  .section__number-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 5;
+    margin-bottom: -28px;
+    margin-top: 80px;
+    align-items: center;
+  }
+
   /* HERO BUTTON STYLE STARTS HERE */
 
   .button-one {
@@ -341,10 +431,10 @@ body {
 
   /* HERO BUTTON STYLE ENDS HERE */
 
-  .icon-divider1 {
+  /* .icon-divider1 {
     margin-top: 104px;
     margin-bottom: 64px;
-  }
+  } */
 
   /* PRODUCTS  STYLE FOR TABLET STARTS HERE */
 
@@ -365,13 +455,18 @@ body {
     border-radius: 10px;
   }
 
+
+  .center-section{
+    margin-top: 80px;
+
+  }
   /* PRODUCTS  STYLE FOR TABLET ENDS HERE */
 
   /* PURPOSE  STYLE FOR TABLET STARTS HERE */
 
   .purpose-section {
+    
     text-align: center;
-    margin-top: 80px;
     margin: auto;
     width: 573px;
     height: 240px;
@@ -412,12 +507,13 @@ body {
     text-align: center;
     width: 573px;
     height: 78px;
-    margin-bottom: 80px;
   }
 
   /* PURPOSE  STYLE FOR TABLET ENDS HERE */
 
   /* FOOTER  STYLE FOR TABLET STARTS HERE */
+
+
 
   .footer {
     display: flex;
@@ -488,7 +584,306 @@ body {
     color: #d9b8ff;
   }
   /* FOOTER  STYLE FOR TABLET ENDS HERE */
+
 }
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width:1199px)  {
+  body {
+    /* display: flex; */
+    margin: 0;
+    /* background-color: #71c0d4; */
+    /* background-color: #d9b8ff; */
+  }
+
+  .logo {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 265px;
+  }
+
+
+
+
+
+  .hero-section {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+
+.buttons{
+  margin-bottom: 60px;
+
+}
+  .column1-tablet {
+    display: inline;
+    /* width: 830px; */
+  }
+
+  .heroImage-tablet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .column1 {
+    display: none;
+  }
+
+  .column2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 457px;
+    height: 262px;
+    text-align: center;
+    margin: auto;
+    margin-top: 72px;
+    margin-bottom: 80px;
+  }
+
+  .headline-main {
+    color: #28283d;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  .main-paragraph {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #87879d;
+    width: 457px;
+    height: 52px;
+    margin-bottom: 32px;
+  }
+
+  .column3 {
+    display: none;
+  }
+
+
+  .section__number-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 5;
+  margin-top: 80px;
+  margin-bottom: 67px;
+    align-items: center;
+  }
+  
+
+  /* SECTION-NUMBERS */
+  
+  .section__number-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 5;
+    margin-bottom: -28px;
+    margin-top: 80px;
+    align-items: center;
+  }
+
+  /* HERO BUTTON STYLE STARTS HERE */
+
+  .button-one {
+    width: 193px;
+    height: 58px;
+    font-size: 16px;
+    line-height: 26px;
+    border-radius: 29px;
+  }
+
+  .what-btn {
+    width: 139px;
+    height: 58px;
+    font-size: 16px;
+    border-radius: 29px;
+  }
+
+  /* HERO BUTTON STYLE ENDS HERE */
+
+  /* .icon-divider1 {
+    margin-top: 104px;
+    margin-bottom: 64px;
+  } */
+
+  /* PRODUCTS  STYLE FOR TABLET STARTS HERE */
+
+  .products-section {
+    display: flex;
+    gap: 11px;
+    margin: auto;
+    width: 689px;
+    height: 156px;
+    margin-bottom: 48px;
+  }
+
+  .products-section img {
+    width: 164px;
+    height: 156px;
+    margin: auto;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+  }
+
+
+  .center-section{
+    margin-top: 80px;
+
+  }
+  /* PRODUCTS  STYLE FOR TABLET ENDS HERE */
+
+  /* PURPOSE  STYLE FOR TABLET STARTS HERE */
+
+  .purpose-section {
+    
+    text-align: center;
+    margin: auto;
+    width: 573px;
+    height: 240px;
+  }
+
+  .subheading {
+    margin: auto;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    color: #4d96a9;
+    width: 296px;
+    height: 26px;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .headline {
+    margin: auto;
+    font-size: 40px;
+    line-height: 44px;
+    text-align: center;
+    color: #28283d;
+    text-align: center;
+    width: 445px;
+    height: 88px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+  }
+
+  .purpose-section p {
+    margin: 0;
+    color: #87879d;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+    width: 573px;
+    height: 78px;
+  }
+
+  /* PURPOSE  STYLE FOR TABLET ENDS HERE */
+
+  /* FOOTER  STYLE FOR TABLET STARTS HERE */
+
+
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("assets/desktop/footer.jpg");
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+
+    align-items: center;
+  }
+
+  .footer-column1 {
+    width: 100%;
+  }
+
+  .footer-column2 {
+    width: 100%;
+  }
+
+  .footer-column3 {
+    width: 100%;
+  }
+
+  .footer-column1 h2 {
+    margin: auto;
+    font-size: 40px;
+    line-height: 44px;
+    color: #fafafa;
+    font-weight: 900;
+    width: 457px;
+    text-align: center;
+    margin-bottom: 32px;
+    margin-top: 92px;
+  }
+
+  .footer-column2 p {
+    font-size: 18px;
+    color: #fafafa;
+    margin: auto;
+    font-style: medium;
+    line-height: 26px;
+    width: 573px;
+    height: 52px;
+    font-weight: 500;
+  }
+
+  .footer-column3 button {
+    font-size: 16px;
+    width: 193px;
+    height: 58px;
+    border-radius: 49px;
+    background-color: #855fb1;
+    text-align: center;
+    color: white;
+    margin: auto;
+    font-weight: 900;
+    margin-top: 40px;
+    margin-bottom: 66px;
+  }
+
+  .footer-version {
+    color: #d9b8ff;
+  }
+  /* FOOTER  STYLE FOR TABLET ENDS HERE */
+
+
+  
+}
+
+
+
+
+
+
+
 
 /* TABLET VERSION STYLE STARTS ENDS */
 
@@ -520,10 +915,10 @@ body {
     align-items: center;
   }
 
-  .icon-divider1 {
+  /* .icon-divider1 {
     margin-top: 120px;
     margin-bottom: 64px;
-  }
+  } */
 
   .headline-main {
     color: #28283d;
@@ -567,10 +962,19 @@ body {
     align-items: center;
   }
 
+  .section__number-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 5;
+   
+    align-items: center;
+  }
+
   .products-section {
     width: 327px;
     height: 310px;
-
     display: flex;
     justify-content: space-between;
     align-content: space-between;
@@ -630,12 +1034,6 @@ body {
     margin-top: 24px;
   }
 
-  /* .purpose-content{
-  width: 330px;
-margin-left: 40px; 
- height: auto;
- text-align: center;
-} */
 
   .purpose-section p {
     margin: 0;
@@ -653,19 +1051,38 @@ margin-left: 40px;
     height: 284px;
     margin: auto;
     margin-top: 64px;
+    margin-bottom: 64px;
   }
 
-  .icon-divider2 {
-    margin-top: 64px;
-    border-color: none;
+
+  .section__number-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 5;
+  margin-top: 128px;
+  margin-bottom: 64px;
+    align-items: center;
   }
-  /* FOOTER SECTION */
+  
+  
+  .section__number-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 5;
+    margin-bottom: -28px;
+    margin-top: 64px;
+    align-items: center;
+  }
 
   .footer {
     display: flex;
     flex-direction: column;
     /* or display: grid */
-    width: auto;
+    width: 100%;
     height: 428px;
     margin: auto;
     background-image: url("assets/desktop/footer.jpg");
